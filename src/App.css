@@ -10,7 +10,7 @@ html {
 
 .container {
   max-width: 1120px;
-  margin-inline: var(--mb-1-5);
+  margin-inline: 1.5rem;
 }
 
 .grid {
@@ -19,5 +19,5 @@ html {
 }
 
 .section {
-  padding-block: 4rem 1rem;
+  padding-block: 5rem 1rem;
 }

@@ -1,0 +1,52 @@
+/*=============== Reusable Css Classes ===============*/
+.container {
+  max-width: 1120px;
+  margin-inline: 1rem;
+}
+
+body {
+  font-family: var(--body-font);
+}
+
+.grid {
+  display: grid;
+  gap: var(--mb-1-5);
+}
+
+.section {
+  padding-block: 5rem 1rem;
+}
+
+.TodoFormCon {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.Input {
+  padding: 1rem;
+  border: none;
+  outline: none;
+  margin-left: -1rem;
+  font-size: 1rem;
+}
+
+.TodoCardCon {
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #999999;
+  border-radius: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.Button {
+  font-size: 2rem;
+  background-color: #fff;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999999;
+}

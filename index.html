@@ -1,15 +1,26 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root">
-      
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/note-logo.png" />
+  <link rel="stylesheet" href="./src/index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-container">
+      <img src="note-logo.png" class="header-logo" alt="Note-logo">
+      <div class="header-texts">
+        <h1 class="title">Todo List</h1>
+        <p class="subtitle">Creat your list</p>
+      </div>
     </div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+  </div>
+
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
 </html>

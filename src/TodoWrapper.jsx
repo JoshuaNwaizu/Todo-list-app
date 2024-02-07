@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 import TodoForm from './TodoForm'
+import EditTodoForm from './EditTodoForm'
 import { v4 as uuidv4 } from 'uuid'
 import Todo from './Todo'
-import './App.css'
-const ID = uuidv4()
+import './TodoWrapper.css'
 
-//import styled from 'styled-components'
-import { Container } from './assets/ReuseableCss'
+
 
 //const BgCon = styled.div``
 const TodoWrapper = () => {
@@ -17,18 +16,43 @@ const TodoWrapper = () => {
         {
             task: todo,
             isEditing: false,
-            id: ID,
+            id: uuidv4(),
             completed: false
         }])
         console.log(todos)
     }
+    const handleOnComplete = id => {
+        setTodos(todos.map(todo => todo.id === id ? { ...todo, completed: !todo.completed } : todo))
+        console.log(todos)
+    }
+
+    const handleDelete = id => {
+        setTodos(todos.filter(todo => todo.id !== id))
+    }
+
+    const handleEditTodo = id => {
+        setTodos(todos.map(todo => todo.id === id ? { ...todo, isEditing: !todo.isEditing } : todo))
+    }
+    const handleEditTasks = id => {
+        setTodos(todos.map(todo => todo.id === id ? { ...todo, isEditing: !todo.isEditing, task } : todo))
+    }
+
     return (
-        <Container className='todoWrapper'>
+        <div className='todoWrapper'>
             <div>
-                <TodoForm addTodo = {handleTodos}/>
-                {...todos.map((todo, index) =>  <Todo task={todo} key={index}/> )}
+                <TodoForm addTodo={handleTodos} />
+                <div className='todo-tasks container'>
+                    {...todos.map((todo, index) => (
+                        todo.isEditing ? <EditTodoForm editTodo={handleEditTasks} task={todo} /> : (
+                            < Todo task={todo} key={index}
+                                onComplete={handleOnComplete}
+                                onDelete={handleDelete} editTodo={handleEditTodo} />)
+
+
+                    ))}
+                </div>
             </div>
-        </Container>
+        </div>
     )
 }
 
