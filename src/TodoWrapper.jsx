@@ -11,6 +11,7 @@ import './TodoWrapper.css'
 const TodoWrapper = () => {
     const [todos, setTodos] = useState([])
 
+
     function handleTodos(todo) {
         setTodos([...todos,
         {
@@ -43,12 +44,11 @@ const TodoWrapper = () => {
                 <TodoForm addTodo={handleTodos} />
                 <div className='todo-tasks container'>
                     {...todos.map((todo, index) => (
-                        todo.isEditing ? <EditTodoForm editTodo={handleEditTasks} task={todo} /> : (
-                            < Todo task={todo} key={index}
+                        !todo.isEditing ?
+                            <Todo task={todo} key={index}
                                 onComplete={handleOnComplete}
-                                onDelete={handleDelete} editTodo={handleEditTodo} />)
-
-
+                                onDelete={handleDelete} editTodo={handleEditTodo} /> :
+                            <EditTodoForm editTodo={handleEditTasks} task={todo} />
                     ))}
                 </div>
             </div>

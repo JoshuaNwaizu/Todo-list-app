@@ -4,13 +4,13 @@ import { MdUpdate } from "react-icons/md";
 import classes from './EditTodoForm.module.css'
 
 
-const EditTodoForm = ({ editTodo, task }) => {
+const EditTodoForm = ({ editTodo, task, handleToggleForm }) => {
   const [value, setValue] = useState(task.task)
-
+ 
   function handleSubmit(e) {
     e.preventDefault()
     editTodo(value, task.id)
-
+    setShowForm(false);
     setValue('')
   }
   return (
@@ -21,7 +21,7 @@ const EditTodoForm = ({ editTodo, task }) => {
           className={classes.Input}
           placeholder='Update tasks'
           onChange={(e) => setValue(e.target.value)} />
-        <button className={`${classes.Button} todo-btn`}><MdUpdate /></button>
+        <button className={`${classes.Button} todo-btn`} onClick={handleToggleForm}><MdUpdate /></button>
       </form>
     </div>
   )
