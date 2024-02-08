@@ -24,7 +24,7 @@ body {
 }
 
 .Input {
-    padding: 1rem;
+    padding: 1rem 1.2rem;
     border: none;
     outline: none;
     margin-left: -1rem;
@@ -33,10 +33,12 @@ body {
 }
 
 .TodoCardCon {
+    display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #999999;
-    border-radius: 2rem;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    width: 90%;
     margin-top: .5rem;
 }
 

@@ -27,5 +27,31 @@ html {
   align-items: center;
   flex-direction: column;
   padding: .5rem;
-  
+
+}
+
+.render-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 1rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.render-image {
+  height: 200px;
+}
+
+.render-text {
+  font-size: 1.5rem;
+  display: none;
+  margin-bottom: -.7rem;
+}
+.render-icon {
+  font-size: 15rem;
+  display: none;
+  color: #7e7c7c99;
+  background-color: #fff;
 }

@@ -1,30 +1,35 @@
-
-import React from 'react'
-import { useState } from 'react'
+import React from "react";
+import { useState } from "react";
 import { LuPlusSquare } from "react-icons/lu";
-import './TodoForm.css'
+import "./TodoForm.css";
 
 const TodoForm = ({ addTodo }) => {
-    const [value, setValue] = useState('')
+  const [value, setValue] = useState("");
 
-    function handleSubmit(e) {
-        e.preventDefault()
-        addTodo(value)
-
-        setValue('')
+  function handleSubmit(e) {
+    e.preventDefault();
+    if (!value) {
+      return;
     }
-    return (
-        <div className='TodoCardCon' >
-            <form className='TodoFormCon container' onSubmit={handleSubmit}>
-                <input type="text"
-                    value={value}
-                    className="Input"
-                    placeholder='Enter your tasks'
-                    onChange={(e) => setValue(e.target.value)} />
-                <button className="todo-btn Button"><LuPlusSquare /></button>
-            </form>
-        </div>
-    )
-}
+    addTodo(value);
+    setValue("");
+  }
+  return (
+    <div className="formCon">
+      <form className="form container" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          value={value}
+          className="input"
+          placeholder="Enter your tasks"
+          onChange={(e) => setValue(e.target.value)}
+        />
+        <button className="todo-btn Button">
+          <LuPlusSquare />
+        </button>
+      </form>
+    </div>
+  );
+};
 
-export default TodoForm
+export default TodoForm;

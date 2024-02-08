@@ -4,6 +4,7 @@
   margin-inline: 1rem;
 }
 
+
 body {
   font-family: var(--body-font);
 }
@@ -17,14 +18,14 @@ body {
   padding-block: 5rem 1rem;
 }
 
-.TodoFormCon {
+.form {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 
 }
 
-.Input {
+.input {
   padding: 1rem;
   border: none;
   outline: none;
@@ -32,7 +33,7 @@ body {
   font-size: 1rem;
 }
 
-.TodoCardCon {
+.formCon {
   align-items: center;
   justify-content: center;
   border: 1px solid #999999;
@@ -49,4 +50,23 @@ body {
   align-items: center;
   justify-content: center;
   color: #999999;
+}
+
+@media screen and (max-width: 350px) {
+
+  .form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .input {
+    padding: 1rem;
+    border: none;
+    outline: none;
+    margin-left: -1rem;
+    font-size: 1rem;
+  }
+
+
 }
