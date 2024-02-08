@@ -69,7 +69,7 @@ const TodoWrapper = () => {
       return (
         <div className="render-container container ">
           <img
-            src="src/assets/add-tasks.png"
+            src="/add-tasks.png"
             alt="Add task logo"
             className="render-image"
           />
