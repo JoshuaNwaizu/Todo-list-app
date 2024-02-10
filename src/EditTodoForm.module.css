@@ -20,15 +20,16 @@ body {
 .TodoFormCon {
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: space-evenly;
 }
 
 .Input {
-    padding: 1rem 1.2rem;
+    padding: 1.2rem 1.5rem;
     border: none;
     outline: none;
     margin-left: -1rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     background-color: transparent;
 }
 
@@ -42,7 +43,7 @@ body {
     margin-top: .5rem;
 }
 
-.Button {
+.button {
     font-size: 2rem;
     background-color: transparent;
     outline: none;
@@ -51,4 +52,11 @@ body {
     align-items: center;
     justify-content: center;
     color: #999999;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 650px) {
+    .TodoCardCon {
+        width: 80%;
+    }
 }

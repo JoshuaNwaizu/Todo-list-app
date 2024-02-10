@@ -4,7 +4,7 @@ import TodoWrapper from './TodoWrapper'
 function App() {
 
   return (
-    <div className='container section'>
+    <div className='app container section'>
       <TodoWrapper />
     </div>
 

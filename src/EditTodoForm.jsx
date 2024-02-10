@@ -26,7 +26,7 @@ const EditTodoForm = ({ editTodo, task }) => {
           placeholder="Update tasks"
           onChange={(e) => setValue(e.target.value)}
         />
-        <button className={`${classes.Button} todo-btn`}>
+        <button className={`${classes.button} todo-btn`}>
           <MdUpdate />
         </button>
       </form>

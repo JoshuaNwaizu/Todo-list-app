@@ -18,6 +18,16 @@
 }
 
 /*=============== Reusable Css Classes ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1120px;
   margin-inline: 1.5rem;

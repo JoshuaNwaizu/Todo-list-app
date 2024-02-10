@@ -41,7 +41,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.Button {
+.button {
   font-size: 2rem;
   background-color: #fff;
   outline: none;
@@ -50,6 +50,7 @@ body {
   align-items: center;
   justify-content: center;
   color: #999999;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 350px) {
@@ -58,15 +59,43 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin-inline: .5rem;
   }
 
   .input {
     padding: 1rem;
     border: none;
     outline: none;
-    margin-left: -1rem;
-    font-size: 1rem;
+    margin-left: .5rem;
+    font-size: .8rem;
   }
 
+  .button {
+    font-size: 1.5rem;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999999;
+    cursor: pointer;
+  }
 
+}
+
+@media screen and (min-width: 650px) {
+  .form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-inline: .5rem;
+  }
+.input {
+  padding: 2rem;
+}
+  .formCon {
+    width: 80%;
+    margin-inline: auto;
+  }
 }

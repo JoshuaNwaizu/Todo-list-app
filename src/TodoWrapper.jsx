@@ -79,7 +79,7 @@ const TodoWrapper = () => {
       );
     }
     return (
-      <div className="todo-tasks container">
+      <div className="todo-tasks container section">
         {...todos.map((todo, index) =>
           !todo.isEditing ? (
             <Todo

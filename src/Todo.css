@@ -35,10 +35,12 @@ html {
     padding: .8rem 1rem;
     border-radius: 1rem;
 }
+
 .tasks p {
     font-size: 1rem;
-    
+
 }
+
 .icons {
     display: flex;
     flex-direction: row;
@@ -47,13 +49,44 @@ html {
     font-size: 1.5rem;
     font-weight: 700;
 }
+
 .trash {
-   color: rgba(255, 0, 0, 0.843);
+    color: rgba(255, 0, 0, 0.843);
 }
+
 .edit {
-    color: #3f3d3d;  font-size: 1.5rem;
+    color: #3f3d3d;
+    font-size: 1.5rem;
 }
+
+.edit,
+.trash {
+    cursor: pointer;
+}
+
 .completed {
     text-decoration: line-through;
     color: #3f3d3d86;
+}
+
+@media screen and (min-width: 650px) {
+    .tasks {
+        width: 80%;
+        padding: 1.2rem 1.5rem;
+      
+    }
+    .tasks p {
+        font-size: 1.3rem;
+    
+    }
+    .icons {
+
+        column-gap: .7rem;
+        font-size: 1.7rem;
+     
+    }
+    .edit {
+        color: #3f3d3d;
+        font-size: 1.7rem;
+    }
 }

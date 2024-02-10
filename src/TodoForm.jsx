@@ -24,7 +24,7 @@ const TodoForm = ({ addTodo }) => {
           placeholder="Enter your tasks"
           onChange={(e) => setValue(e.target.value)}
         />
-        <button className="todo-btn Button">
+        <button className="todo-btn button" >
           <LuPlusSquare />
         </button>
       </form>

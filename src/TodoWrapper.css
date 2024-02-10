@@ -55,3 +55,14 @@ html {
   color: #7e7c7c99;
   background-color: #fff;
 }
+
+
+@media screen and (min-width: 650px) {
+  .todo-tasks {
+    width: 80%;
+    padding: .5rem;
+    margin-inline: auto;
+  
+  }
+
+}
