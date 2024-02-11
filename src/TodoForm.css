@@ -84,18 +84,30 @@ body {
 
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 600px) {
   .form {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin-inline: .5rem;
   }
-.input {
-  padding: 2rem;
-}
+
+  .input {
+    padding: -1rem;
+    font-size: 1.8rem;
+  }
+
+  .form {
+    padding: -2rem;
+  }
+
   .formCon {
     width: 80%;
     margin-inline: auto;
+    border-radius: 4rem;
+  }
+
+  .button {
+    font-size: 3rem;
   }
 }

@@ -32,10 +32,12 @@ html {
   max-width: 1120px;
   margin-inline: 1.5rem;
 }
+
 body {
   font-family: var(--body-font);
   color: var(--text-color);
 }
+
 .grid {
   display: grid;
   gap: var(--mb-1-5);
@@ -48,6 +50,7 @@ body {
 .section-alt {
   padding-block: 2rem 1rem;
 }
+
 .header-container {
   display: flex;
   align-items: center;
@@ -56,18 +59,49 @@ body {
   margin-top: 2rem;
   padding: 1rem 0;
 }
+
 .header-logo {
   height: 70px;
 }
+
 .header-texts {
   display: flex;
   flex-direction: column;
-
   justify-content: center;
   color: var(--text-color);
 }
+
 .title {
   font-size: 2rem;
   font-weight: 300;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 650px) {
+  .header-container {
+    align-items: initial;
+    justify-content: initial;
+    margin-top: 0;
+    padding-inline: 4rem;
+    column-gap: 1.5rem;
+  }
+
+  .header-logo {
+    height: 90px;
+  }
+
+  .title {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .header {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
 }

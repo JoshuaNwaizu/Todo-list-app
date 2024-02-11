@@ -22,3 +22,9 @@ html {
   padding-block: 5rem 1rem;
 }
 
+@media screen and (min-width: 1050px) {
+
+.app {
+  padding-inline: 13rem;
+}
+}

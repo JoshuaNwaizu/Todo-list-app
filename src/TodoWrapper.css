@@ -25,6 +25,7 @@ html {
   border-radius: 1rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   padding: .5rem;
 
@@ -59,10 +60,12 @@ html {
 
 @media screen and (min-width: 650px) {
   .todo-tasks {
-    width: 80%;
+    width: 85%;
     padding: .5rem;
     margin-inline: auto;
-  
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
 }

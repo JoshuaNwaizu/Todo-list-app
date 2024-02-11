@@ -69,24 +69,23 @@ html {
     color: #3f3d3d86;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 600px) {
     .tasks {
         width: 80%;
         padding: 1.2rem 1.5rem;
       
     }
     .tasks p {
-        font-size: 1.3rem;
+        font-size: 1.8rem;
     
     }
     .icons {
-
         column-gap: .7rem;
-        font-size: 1.7rem;
+        font-size: 2rem;
      
     }
     .edit {
         color: #3f3d3d;
-        font-size: 1.7rem;
+        font-size: 2.2rem;
     }
 }

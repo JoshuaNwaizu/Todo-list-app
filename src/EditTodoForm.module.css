@@ -59,4 +59,21 @@ body {
     .TodoCardCon {
         width: 80%;
     }
+
+  .Input {
+    font-size: 1.8rem;
+  }
+  .form {
+    padding: -2rem;
+  }
+
+  .formCon {
+    width: 80%;
+    margin-inline: auto;
+    border-radius: 4rem;
+
+  }
+  .button {
+    font-size: 3rem;
+  }
 }
