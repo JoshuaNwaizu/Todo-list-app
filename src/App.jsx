@@ -1,14 +1,12 @@
-import './App.css'
-import TodoWrapper from './TodoWrapper'
+import "./App.css";
+import TodoWrapper from "./TodoWrapper";
 
 function App() {
-
   return (
-    <div className='app container section'>
+    <div className="app container section">
       <TodoWrapper />
     </div>
-
-  )
+  );
 }
 
-export default App
+export default App;
