@@ -43,13 +43,16 @@ html {
 
 .render-image {
   height: 200px;
+  
 }
 
 .render-text {
   font-size: 1.5rem;
-  display: none;
+  display: block;
   margin-bottom: -.7rem;
+  margin-left: -1rem;
 }
+
 .render-icon {
   font-size: 15rem;
   display: none;
